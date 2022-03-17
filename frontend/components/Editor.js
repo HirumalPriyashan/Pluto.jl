@@ -768,6 +768,8 @@ patch: ${JSON.stringify(
             })
             // view stats on https://stats.plutojl.org/
             count_stat(`article-view`)
+
+            ;(async () => setup_mathjax())()
         } else {
             this.connect()
         }
